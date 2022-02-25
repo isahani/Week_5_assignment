@@ -4,8 +4,8 @@ public class Floridaformatter implements DriversLicenseFormatter{
 
     public String formatLicenseNumber(DriversLicense driversLicense){
         //code
-        String nn = Integer.toString(dl.getNN());
+        String nn = Integer.toString(driversLicense.getNN());
         Character n = nn.charAt(0);
-        return dl.getSSSS() + "-" + dl.getFFF() + "-" + dl.getYY() + dl.getDDD() + "-" + n;
+        return driversLicense.getSSSS() + "-" + driversLicense.getFFF() + "-" + driversLicense.getYY() + driversLicense.getDDD() + "-" + n;
     }
 }

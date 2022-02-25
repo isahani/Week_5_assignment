@@ -4,11 +4,10 @@ public class WisconsinFormatter implements DriversLicenseFormatter{
 
     public String formatLicenseNumber (DriversLicense driversLicense){
         //code
-        String yy = Integer.toString((dl.getYY()));
-        //System.out.println(yy);
+        String yy = Integer.toString((driversLicense.getYY()));
         Character y1 = yy.charAt(0);
         Character y2 = yy.charAt(1);
-        return dl.getSSSS() + "-" + dl.getFFF() + y1 + "-" + y2 + dl.getDDD() + "-" + dl.getNN();
+        return driversLicense.getSSSS() + "-" + driversLicense.getFFF() + y1 + "-" + y2 + driversLicense.getDDD() + "-" + driversLicense.getNN();
     }
 
 }

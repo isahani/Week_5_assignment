@@ -23,12 +23,12 @@ public class DriversLicense {
         this.FFF = FFF;
     }
 
-    public int getYY() {
-        return YY;
-    }
-
     public void setYY(int YY) {
         this.YY = YY;
+    }
+
+    public int getYY() {
+        return YY;
     }
 
     public int getDDD() {
